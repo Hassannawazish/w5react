@@ -4,16 +4,15 @@ import Parent from './Parent';
 import ValueContext from './ValueContext';
 
 function App() {
-  let [number,setNumber]=useState(45)
-  let value=82;
+  //let [number,setNumber]=useState(45)
+  let value=useState(45);
   return (
-    //<ValueContext.Provider value={value}> 
+    <ValueContext.Provider value={value}> 
     <div>
-      hy
-      <Parent num={number}></Parent>
-      <button onClick={()=>{setNumber(++number)}}>Update Number</button>
+      Hello word
+      <Parent></Parent>
     </div>
-    //</ValueContext.Provider>
+    </ValueContext.Provider>
   );
 }
 export default App;
